@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Celebrity Friend Finder</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="styles.css" />
+
+</head>
+
+<body>
+
+    <h1>Survey Questions</h1>
+
+    <hr>
+
+    <h2>About You</h2>
+    
+        <h4>Name (Required)</h4>
+        <input type="text" id="name" class="form-control" required>
+
+        <h4>Link to Photo Image (Required)</h4>
+        <input type="text" id="id" class="form-control" required>
+
+    <hr>
+
+
+    <div class="surveyQuestions">
+    <h2>Question 1</h2>
+    <h4>You are always up to try new things.</h4>
+    <select name="options" id="q1">
+        <option value>Select an option</option>
+        <option value="1">1 (Strongly Disagree)</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5 (Strongly Agree)</option>
+    </select>
+
+    <h2>Question 2</h2>
+    <h4>You believe that honesty and trust are key in any relationship.</h4>
+    <select name="options" id="q1">
+            <option value>Select an option</option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+
+    <h2>Question 3</h2>
+    <h4>You would do anything for your friends.</h4>
+    <select name="options" id="q1">
+            <option value>Select an option</option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+
+    <h2>Question 4</h2>
+    <h4>You don't mind the idea of talking till the sun comes up about random things or serious things.</h4>
+    <select name="options" id="q1">
+            <option value>Select an option</option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+
+    <h2>Question 5</h2>
+    <h4>It is often difficult for you to relate to other people’s feelings.</h4>
+    <select name="options" id="q1">
+            <option value>Select an option</option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+
+    <h2>Question 6</h2>
+    <h4>You love to laugh and make people laugh.</h4>
+    <select name="options" id="q1">
+            <option value>Select an option</option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+
+    <h2>Question 7</h2>
+    <h4>You rarely get carried away by fantasies and ideas.</h4>
+    <select name="options" id="q1">
+            <option value>Select an option</option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+
+    <h2>Question 8</h2>
+    <h4>You are a romantic person.</h4>
+    <select name="options" id="q1">
+            <option value>Select an option</option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+
+    <h2>Question 9</h2>
+    <h4>You think that everyone’s views should be respected regardless of whether they are supported by facts or not.</h4>
+    <select name="options" id="q1">
+            <option value>Select an option</option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+
+    <h2>Question 10</h2>
+    <h4>You love to learn.</h4>
+    <select name="options" id="q1">
+            <option value>Select an option</option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+    </div>
+    
+
+    <hr>
+
+
+    <button type="button" class="btn btn-primary btn-lg btn-block">SUBMIT</button>
+
+    <footer class=“footer”>
+        <div class=“container”>
+          <p>
+            <a href="/api/friends">API Friends List</a>
+            |
+            <a href=“https://github.com/niveditanagar/Friend-Finder ” target=“_blank”>GitHub Repo</a>
+          </p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <script src="server.js"></script>
+
+    <script type="text/javascript">
+        $(":button").on("click", function(event){
+            event.preventDefault();
+            var usesrInfo = {
+                name: $("#name").val().trim(),
+                photo: $("#id").val().trim()
+            };
+            var questionUserInput = [];
+        })
+        
+    </script>
+
+</body>
+
+</html>
