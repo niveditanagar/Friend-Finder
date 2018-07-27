@@ -5,7 +5,7 @@ var path = require("path");
 //console.log("friendsList");
 
 var app = express();
-var PORT = process.env.PORT || 8080;
+var PORT = process.env.PORT || 3000;
 
 // app.get("/", function(req, res){
 //     res.send("Hello World");
